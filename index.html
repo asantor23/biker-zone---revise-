@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,100 border border-blue-200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,100 border border-blue-200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
     <!-- daisyUI -->
@@ -195,7 +195,8 @@
             <div class="flex lg:flex-row flex-col items-center justify-center lg:mt-12 mt-4 gap-3">
                 <!-- card1 -->
                 <div>
-                    <div class="card card-compact bg-base-100 w-96 shadow-xl hover:bg-red-200 p-5 space-y-8">
+                    <div
+                        class="card card-compact bg-base-100 w-96 shadow-xl hover:bg-red-100 border border-blue-200 p-5 space-y-8">
                         <figure>
                             <img src="./images/others/latest1.png" alt="bike1" />
                         </figure>
@@ -369,10 +370,87 @@
             </div>
         </section>
 
+
+        <!-- Question section -->
+        <section class="md:container md:mx-auto      md:my-32 my-16">
+            <div class="flex items-center justify-center">
+                <h2 class="font-semibold text-3xl md:text-5xl text-black">Frequently Asked <span
+                        class="text-bike-primary">Question
+                    </span></h2>
+            </div>
+
+            <!-- question boxs div -->
+            <div class="flex flex-col md:flex-row justify-between my-12 gap-24">
+                <!-- img -->
+                <div class="flex justify-center ">
+                    <img src="images/others/faq.png" alt="" class="w-4/6 lg:w-full ">
+                </div>
+                <!-- Question boxs -->
+                <div class="lg:max-w-prose space-y-4 md:my-14 px-4">
+                    <div class="collapse collapse-arrow bg-base-150 mb-5 border border-blue-100 border border-blue-200">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">What are the most important things I should know
+                            about riding a bike?</div>
+                        <div class="collapse-content">
+                            <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                                laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will
+                                help you be a more focused and legally compliant bike rider. </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-100 border border-blue-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">How can I tell if my helmet is old and I need a
+                            new one?</div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-100 border border-blue-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">My bike has been in storage is it safe to ride?
+                        </div>
+                        <div class="collapse-content">
+                            <p>Yes !</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-100 border border-blue-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">What rules should I follow when riding my bike?
+                        </div>
+                        <div class="collapse-content">
+                            <p>control my mind and speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </body>
     <!-- footer -->
     <footer>
-
+        <footer class="footer bg-neutral text-neutral-content py-12 md:px-32 px-5 md:flex md:justify-between">
+            <aside class="space-y-4 ">
+                <p>
+                    Download   Now   License
+                    <br />
+                    <br>
+                    About  Features   Pricing   Careers   Help
+                </p>
+                <p class=" ">© 2020 bike. All rights reserved</p>
+            </aside>
+            <nav class="">
+                <h6 class="footer-title font-bold">Get the App</h6>
+                <div class="grid grid-cols-1 gap-4">
+                    <a>
+                        <img class="w-32" src="images/others/android.png" alt="">
+                    </a>
+                    <a>
+                        <img class="w-32" src="images/others/ios.png" alt="">
+                    </a>
+                </div>
+            </nav>
+        </footer>
     </footer>
 </body>
 
